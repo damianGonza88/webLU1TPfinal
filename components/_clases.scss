@@ -1,0 +1,90 @@
+@import"../base/mixin";
+.spaceEvenly{
+    width: 100%;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;    
+}
+.contenedor{
+    @extend %disposicionHorizontal;
+
+}
+.nombrePagina{
+    text-decoration: underline;
+}
+
+.fotoGrande{
+   @include imagen(35vw, 23vw, 10px);
+    
+}
+.fotoMedia {
+    @include imagen(320px, 270px, 0px);
+}
+.fotoLarga {
+    @include imagen(65vw, 25vw, 0);
+     
+}
+
+.espaciado{
+    margin: 15px 0;
+}
+.enlace {
+    text-decoration: none;
+    color: $colorEnlace;
+    font-size: 20px;        
+}
+.imagenEnlace{
+    @include imagen(40px, 40px, 0 10px);
+    
+    &:hover{
+        animation: tada;
+        animation-duration: 0.5s;
+    }
+}
+.enlaceAside{
+    width: 12vw;
+    height: 4vw;
+    background-color: $colorSecundario;
+    &:hover{
+    transform:rotate(5deg);
+    }   
+}
+.centrar{
+    display: block;
+    margin: 0px auto;    
+}
+.centrado{  
+    display: flex;
+    align-items: center;
+}
+.tituloPrincipal{
+    color: $colorSecundario;
+    text-decoration: none;
+    font-family: map-get($map: $fuentes, $key: tituloPrincipal);
+    margin: 0 10px;
+    font-size: map-get($map: $fuentes, $key:grande)
+}
+.tituloSecundario{
+    color: $colorSecundario; 
+    font-family: map-get($map: $fuentes, $key: tituloSecundario); 
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    margin-top: 15px;
+}
+.parrafo{
+    font-family: map-get($map: $fuentes, $key: parrafo);
+    font-size: map-get($map: $fuentes, $key: media);
+}
+
+.logo{
+    @include imagen(10vw, 10vw, 0);
+    animation: flip;
+    animation-duration: 0.5s;
+}
+.borde{
+    border: $colorTerciario 1.5px solid;
+    border-radius: 15px;
+}

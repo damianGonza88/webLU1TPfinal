@@ -1,0 +1,84 @@
+@import"../components/header";
+@import"../components/footer";
+@import"../components/aside";
+@import"../components/main";
+@import"../base/variables";
+@import"../components/clases";
+@import"../base/extends";
+@import "../base/mixin";
+
+// Reseteo CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+body{
+    background-color: $colorPrimario;
+}
+
+// Animaciones, Transformaciones
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+// Responsive
+@media (min-width: 481px) and (max-width: 960px){
+   
+    .fotoChica{
+      width: 70%;
+      height: auto;
+      margin: 10px auto;
+    }
+    .fotoMedia{
+      width: 70%;
+      height: auto;
+      margin: 10px auto;
+    }
+}
+  
+@media (max-width: 480px){
+    div header div img{
+        width: 20vw;
+        height: 20vw;
+    }    
+    div aside{
+        border-top: black 1px solid ;
+        border-left: none;        
+    }
+    header nav a{
+        font-size: 4.3vw;
+        color: black;
+    }
+        
+    .spaceEvenly{
+        flex-direction:column;
+    }
+    .fotoChica, .fotoMedia{
+        width: 70%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .enlaceAside{
+        width: 30vw;
+        height: 12vw;           
+    }
+    aside ul{
+        display:inline-flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+    
+
+  
+

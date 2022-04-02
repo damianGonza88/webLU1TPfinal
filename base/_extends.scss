@@ -1,0 +1,17 @@
+@import"../base/variables";
+
+
+%disposicionHorizontal{
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+%disposicionVertical{
+    display:inline-flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}

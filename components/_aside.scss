@@ -1,0 +1,17 @@
+
+aside{
+    border-left: $colorTerciario 1px solid ;
+    padding: 5px;
+    align-items:center;
+    justify-content: space-around;
+
+    img{
+        width: 150px;
+        height: 100px;
+        &:hover{
+            transform:rotate(5deg);
+        }        
+    }
+    
+   
+}

@@ -1,0 +1,10 @@
+main{
+    
+    img{
+        margin: 5px auto;
+        &:hover{
+            transform:scale(1.05,1.05);  
+        }
+    }
+    
+}
