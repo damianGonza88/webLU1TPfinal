@@ -19,6 +19,9 @@ li {
 body{
     background-color: $colorPrimario;
 }
+iframe{
+    height: 25vw;
+}
 
 // Animaciones, Transformaciones
 @keyframes aparecer {
@@ -42,6 +45,9 @@ body{
       width: 70%;
       height: auto;
       margin: 10px auto;
+    }
+    iframe{
+        height: auto;
     }
 }
   

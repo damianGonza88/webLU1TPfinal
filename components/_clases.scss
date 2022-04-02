@@ -36,7 +36,7 @@
     font-size: 20px;        
 }
 .imagenEnlace{
-    @include imagen(40px, 40px, 0 10px);
+    @include imagen(40px, 40px, 0 8px);
     
     &:hover{
         animation: tada;
