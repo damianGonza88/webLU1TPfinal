@@ -6,12 +6,6 @@ header{
         background-image: url("../img/fondo1.jpg");
         border-radius: 10px;
     }
-    nav{
-        background-color: $colorAlternativo;
-        a{
-            font-size: map-get($map: $fuentes, $key: chica);
-            color: $colorSecundario!important;            
-        }
-    }
+    
 }
 

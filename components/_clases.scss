@@ -88,3 +88,7 @@
     border: $colorTerciario 1.5px solid;
     border-radius: 15px;
 }
+.itemMenu{
+    font-size: map-get($map: $fuentes, $key: chica);
+    color: $colorSecundario!important;
+}

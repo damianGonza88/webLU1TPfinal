@@ -4,13 +4,6 @@ header div {
   background-image: url("../img/fondo1.jpg");
   border-radius: 10px;
 }
-header nav {
-  background-color: #02022c;
-}
-header nav a {
-  font-size: 1.5vw;
-  color: white !important;
-}
 
 footer {
   padding-top: 10px;
@@ -145,6 +138,11 @@ main img:hover {
 .borde {
   border: black 1.5px solid;
   border-radius: 15px;
+}
+
+.itemMenu {
+  font-size: 1.5vw;
+  color: white !important;
 }
 
 .contenedor {
