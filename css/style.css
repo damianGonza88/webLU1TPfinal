@@ -184,14 +184,8 @@ iframe {
   }
 }
 @media (min-width: 481px) and (max-width: 960px) {
-  .fotoChica {
-    width: 70%;
-    height: auto;
-    margin: 10px auto;
-  }
-
-  .fotoMedia {
-    width: 70%;
+  .fotoChica, .fotoMedia {
+    width: 90%;
     height: auto;
     margin: 10px auto;
   }
@@ -203,6 +197,7 @@ iframe {
   }
 
   iframe {
+    width: 85%;
     height: auto;
   }
 }
@@ -223,7 +218,8 @@ iframe {
   }
 
   iframe {
-    height: 50vw;
+    width: 90%;
+    height: auto;
   }
 
   .visibility {
@@ -235,7 +231,7 @@ iframe {
   }
 
   .fotoChica, .fotoMedia {
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: 10px auto;
   }
