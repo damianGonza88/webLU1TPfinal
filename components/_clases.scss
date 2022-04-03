@@ -92,3 +92,6 @@
     font-size: map-get($map: $fuentes, $key: chica);
     color: $colorSecundario!important;
 }
+.visibility{
+    display: none;
+}
