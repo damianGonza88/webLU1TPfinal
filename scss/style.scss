@@ -20,7 +20,8 @@ body{
     background-color: $colorPrimario;
 }
 iframe{
-    height: 20vw;    
+    width: 95%;
+    height: auto;    
 }
 
 // Animaciones, Transformaciones
@@ -32,6 +33,14 @@ iframe{
         opacity: 1;
     }
 }
+@keyframes rotation {
+    from {
+      transform: rotateY(359deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
 
 // Responsive
 @media (min-width: 481px) and (max-width: 960px){
@@ -44,10 +53,7 @@ iframe{
     .fotoLarga {
         @include imagen(50vw, 20vw, 0);         
     }
-    iframe{
-        width: 85%;
-        height: auto;
-    }
+   
 }
   
 @media (max-width: 480px){
@@ -63,10 +69,7 @@ iframe{
         font-size: 4.3vw;
         color: black;
     }
-    iframe{
-        width: 90%;
-        height: auto;    
-    }
+   
 
     // clases
     .visibility{

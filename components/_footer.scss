@@ -5,5 +5,10 @@ footer{
     margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
+    h2{
+        font-size: 60px;
+        color: $colorAlternativo;
+        animation: rotation 2s infinite linear;        
+    } 
 }

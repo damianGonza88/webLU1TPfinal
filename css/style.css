@@ -13,6 +13,11 @@ footer {
   align-items: center;
   justify-content: center;
 }
+footer h2 {
+  font-size: 60px;
+  color: #02022c;
+  animation: rotation 2s infinite linear;
+}
 
 aside {
   border-left: black 1px solid;
@@ -172,7 +177,8 @@ body {
 }
 
 iframe {
-  height: 20vw;
+  width: 95%;
+  height: auto;
 }
 
 @keyframes aparecer {
@@ -181,6 +187,14 @@ iframe {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotateY(359deg);
+  }
+  to {
+    transform: rotateY(0deg);
   }
 }
 @media (min-width: 481px) and (max-width: 960px) {
@@ -194,11 +208,6 @@ iframe {
     width: 50vw;
     height: 20vw;
     margin: 0;
-  }
-
-  iframe {
-    width: 85%;
-    height: auto;
   }
 }
 @media (max-width: 480px) {
@@ -215,11 +224,6 @@ iframe {
   header nav a {
     font-size: 4.3vw;
     color: black;
-  }
-
-  iframe {
-    width: 90%;
-    height: auto;
   }
 
   .visibility {
