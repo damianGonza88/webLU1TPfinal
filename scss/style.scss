@@ -23,15 +23,18 @@ iframe{
     width: 95%;
     height: auto;    
 }
+img{
+    border-radius: 15px;
+}
 
 // Animaciones, Transformaciones
-@keyframes aparecer {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.aparecerDerecha{
+    animation: backInRight; 
+    animation-duration: 2s;  
+}
+.aparecerIzquierda{
+    animation: backInLeft; 
+    animation-duration: 2s;  
 }
 @keyframes rotation {
     from {
@@ -42,21 +45,26 @@ iframe{
     }
   }
 
-// Responsive
-@media (min-width: 481px) and (max-width: 960px){
+// Responsive md lg
+@media (min-width: 769px) and (max-width: 1200px){
    
-    .fotoChica, .fotoMedia {
-      width: 90%;
-      height: auto;
-      margin: 10px auto;
+    .itemMenu{
+        font-size: 1.5vw;
+        color: $colorSecundario!important;
     }
-    .fotoLarga {
-        @include imagen(50vw, 20vw, 0);         
+    .logo{
+        @include imagen(7.5vw, 7.5vw, 0);
+        animation: flip;
+        animation-duration: 0.5s;
     }
-   
+    .enlaceAside{
+        width: 15vw;
+        height: 5vw;      
+    }   
 }
   
-@media (max-width: 480px){
+// Responsive sm
+@media (max-width: 768px){
     div header div img{
         width: 20vw;
         height: 20vw;
@@ -70,45 +78,40 @@ iframe{
         color: black;
     }
    
-
-    // clases
-    .visibility{
-        display:inline;
-    }        
+    // clases           
     .spaceEvenly{
         flex-direction:column;
     }
-    .fotoChica, .fotoMedia{
-        width: 80%;
-        height: auto;
-        margin: 10px auto;
-    }
+  
     .enlaceAside{
-        width: 30vw;
-        height: 12vw;           
+        width: 25vw;
+        height: 10vw;           
     }
-    aside ul{
-        display:inline-flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: space-around;
-    }
+    
     .logo{
-        @include imagen(30vw, 30vw, 0);
+        @include imagen(12vw, 12vw, 0);
         animation: flip;
         animation-duration: 0.5s;
     }
     .tituloPrincipal{
-        color: $colorTerciario;
+        color: $colorSecundario;
         text-decoration: none;
         font-family: map-get($map: $fuentes, $key: tituloPrincipal);
         margin: 0 10px;
         font-size: map-get($map: $fuentes, $key:grande);
     }
     .itemMenu{
-        font-size: map-get($map: $fuentes, $key: grande);
+        font-size: 15px;
         color: $colorSecundario!important;
-    }
+    }   
+}
+
+// Responsive xsm
+@media (max-width: 576px){
+    .visibility{
+        display:inline;
+    } 
+
 }
     
 

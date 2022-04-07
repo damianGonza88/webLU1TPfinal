@@ -12,6 +12,11 @@ aside{
             transform:rotate(5deg);
         }        
     }
-    
+     ul{
+        display:inline-flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-around;
+    }
    
 }

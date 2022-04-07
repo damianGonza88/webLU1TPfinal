@@ -1,4 +1,6 @@
 @import"../base/mixin";
+@import"../base/variables";
+
 .spaceEvenly{
     width: 100%;
     display:inline-flex;
@@ -14,18 +16,16 @@
 .nombrePagina{
     text-decoration: underline;
 }
+  
 
-.fotoGrande{
-   @include imagen(35vw, 23vw, 10px);
-    
+.foto{
+    display: block; 
+    max-width: 95%; 
+    max-height: 95%; 
+    @include imagen(auto, auto, auto);
+    border-radius: 15px;
 }
-.fotoMedia {
-    @include imagen(320px, 270px, 0px);
-}
-.fotoLarga {
-    @include imagen(65vw, 25vw, 0);
-     
-}
+
 
 .espaciado{
     margin: 15px 0;
@@ -33,8 +33,12 @@
 .enlace {
     text-decoration: none;
     color: $colorEnlace;
-    font-size: 20px;        
+    font-size: 20px;
+    border: $colorTerciario 1px solid;
+    border-radius: 3px;
+    background-color: $colorTerciario;  
 }
+
 .imagenEnlace{
     @include imagen(40px, 40px, 0 8px);
     
@@ -48,7 +52,8 @@
     height: 4vw;
     background-color: $colorSecundario;
     &:hover{
-    transform:rotate(5deg);
+        animation: heartBeat; 
+        animation-duration: 2s;
     }   
 }
 .centrar{
@@ -69,9 +74,6 @@
 .tituloSecundario{
     color: $colorSecundario; 
     font-family: map-get($map: $fuentes, $key: tituloSecundario); 
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
     margin-top: 15px;
 }
 .parrafo{
@@ -80,7 +82,7 @@
 }
 
 .logo{
-    @include imagen(10vw, 10vw, 0);
+    @include imagen(7vw, 7vw, 0);
     animation: flip;
     animation-duration: 0.5s;
 }
@@ -89,7 +91,7 @@
     border-radius: 15px;
 }
 .itemMenu{
-    font-size: map-get($map: $fuentes, $key: chica);
+    font-size: map-get($map: $fuentes, $key: media);
     color: $colorSecundario!important;
 }
 .visibility{

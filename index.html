@@ -29,7 +29,7 @@
         </div>                        
         
         <!-- Barra de Navegacion  -->
-        <nav class="menu navbar-expand-sm navbar-dark bg-dark borde espaciado ">
+        <nav class="menu navbar-expand-sm navbar-dark bg-dark borde">
           <section class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -60,12 +60,13 @@
       </header>
      
       <div class="row mt-2" >
-        <main class="col-lg-9 col-md-8 col-12 container " >
+        <main class="col-lg-9 col-md-9 col-sm-12 col-12 container " >
           <div class="row">
-            <div id="carouselExampleSlidesOnly col-lg-6 col-md-6 col-12" class="carousel centrado slide col-lg-5 m-auto" data-bs-ride="carousel">
+            <!-- Carrusel -->
+            <div id="carouselExampleSlidesOnly " class="carousel slide col-lg-6 col-md-12 col-12 m-auto" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./img/galeria/foto.JPG" class="d-block w-100" alt="Asamblea Ordinaria 2021">
+                  <img src="./img/galeria/foto.JPG" class="d-block w-100 w100" alt="Asamblea Ordinaria 2021">
                 </div>
                 <div class="carousel-item">
                   <img src="./img/galeria/foto1.jpeg" class="d-block w-100" alt="Convenio Jujuy Andino Club de Montaña">
@@ -77,41 +78,37 @@
             </div>
           
             <div class="col-lg-6 col-md-12 col-12">
-              <h2 class="negrita tituloSecundario">Novedades</h2>
+              <h2 class="negrita tituloSecundario aparecerIzquierda">Novedades</h2>
               <p class="parrafo">Firma de convenios: durante el mes de enero se realizaron las firmas de convenios con el Club de montaña Jujuy Andino y la asociación de Bomberos voluntarios de la ciudad de Maimara. Estos convenios tienen como finalidad la colaboración mutua entre el Radio Club y dichas instituciones para todo lo relacionado con las radiocomunicaciones. En primera instancia se está planificando el proyecto para la instalación de una repetidora VHF en la localidad de Tilcara, para brindar cobertura a lugares remotos de  la quebrada para coordinación de los Bomberos en respuesta a emergencias y también con los servicios para las peregrinaciones a Punta Corral. 73’s</p>
             </div>
           </div>
           
-          <div class="row ">
-
-            <div class=" col-lg-8 col-md-12 col-12">
-              <h2 class="negrita tituloSecundario">Reseña Historica</h2>
+          <div class="row mt-4">
+            <div class=" col-lg-7 col-md-12 col-sm-12 col-12">
+              <h2 class="negrita tituloSecundario aparecerIzquierda">Reseña Historica</h2>
               <p class="parrafo">Durante el año 2021, luego de muchos años de inactividad, se logró conformar una comisión reorganizadora para la reactivación del radio club Perico. Una vez realizado los trámites correspondientes con fiscalía de estado, se realizó la asamblea ordinaria donde fue elegida la nueva comisión directiva para el Radio Club. Actualmente están en curso los trámites para la rehabilitación de la licencia con ENACOM para poder brindar a nuestros socios todos los beneficios correspondientes. </p>
             </div>
-                
-            <img class=" col-lg-4 col-md-8 col-9" src="./img/galeria/foto11.jpg" alt="Covocatoria Asamblea 2021">
+            <div class="col-lg-5 col-md-10 col-sm-12 col-9">
+              <img class="foto" src="./img/galeria/foto11.jpg" alt="Covocatoria Asamblea 2021">
+            </div>    
+            
           </div>
                                 
         </main>
     
-        <aside class="col-lg-2 col-md-3 col-12">
-         
-          <h4>Repetidora Cerro Zapla</h4>
-    
-          <img class="fotoChica centrado" src="./img/galeria/foto13.jpg" alt="Repetidora Cerro Zapla">
+        <aside class="col-lg-3 col-md-3 col-sm-12 col-12">         
+          <h4>Repetidora Cerro Zapla</h4>    
+          <img class="foto" src="./img/galeria/foto13.jpg" alt="Repetidora Cerro Zapla">
           <p class="parrafo" >Ya se encuentra operativa la repetidora de banda cruzada VHF/UHF en cerro Zapla, equipada con un sistema de energia solar a una altura de 2151 msnm. LU9TUX</p>
-           
-            
-          <h4>Enlaces</h4>
-  
+                       
+          <h4>Enlaces</h4>  
           <ul class="container">
             <li class="espaciado"><a  href="https://www.enacom.gob.ar/" target="_blank"> <img class="enlaceAside" src="./img/enacom.png" alt="Enacom"></a></li>
             <li class="espaciado"><a  href="https://logdeargentina.com.ar/wp/?page_id=1743" target="_blank"><img class="enlaceAside" src="./img/logDeArgentina.jpg" alt="Log de Argentina"></a></li>
             <li class="espaciado"><a  href="https://www.qrz.com/" target="_blank"><img class="enlaceAside" src="./img/qrz.png" alt="Qrz.com"></a></li>
           </ul>
         </aside>
-      </div>
-      
+      </div>      
         
       <footer>
         <div>
@@ -121,13 +118,10 @@
                 <li> <a href="mailto: radioclubperico@gmail.com" target="_blank"><img class="imagenEnlace"  src="./img/gmail.png" alt="Gmail"></a></li>
                 <li> <a href="https://wa.me/+5493884776677" target="_blank"><img class="imagenEnlace"  src="./img/whatsapp.png" alt="Whatsapp"></a></li>
             </ul>
-        </div>
-  
+        </div>  
       </footer>
     </div>
-
-   
-    
+       
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
