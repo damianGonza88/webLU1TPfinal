@@ -95,6 +95,10 @@ h3, h4{
         width: 15vw;
         height: 5vw;      
     }   
+    .tituloChico{
+        font-size: 4vw;        
+    }
+   
 }
   
 // Responsive sm
@@ -138,7 +142,17 @@ h3, h4{
     .itemMenu{
         font-size: 15px;
         color: $colorSecundario!important;
-    }   
+    }
+     //   Rainbow Button
+  .rainbow-button {
+    width:calc(20vw + 6px);
+    height:calc(8vw + 6px);
+    font-size:3vw;   
+  }
+  .rainbow-button:after {
+    width:20vw;
+    height:8vw;    
+  }   
 }
 
 // Responsive xsm
@@ -146,6 +160,12 @@ h3, h4{
     .visibility{
         display:inline;
     } 
+    .tituloChico{
+        font-size: 6vw;        
+    }
+    .tituloSecundario{
+        font-size: 6vw;
+    }
 
 }
     
