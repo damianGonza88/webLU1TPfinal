@@ -25,10 +25,6 @@ aside {
   align-items: center;
   justify-content: space-around;
 }
-aside img {
-  width: 150px;
-  height: 100px;
-}
 aside img:hover {
   transform: rotate(5deg);
 }
@@ -59,11 +55,15 @@ main img:hover {
 
 .foto {
   display: block;
-  max-width: 95%;
-  max-height: 95%;
-  width: auto;
-  height: auto;
-  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+}
+
+.video {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
   border-radius: 15px;
 }
 
@@ -186,11 +186,6 @@ body {
   background-color: black;
 }
 
-iframe {
-  width: 95%;
-  height: auto;
-}
-
 img {
   border-radius: 15px;
 }
@@ -259,8 +254,6 @@ h3, h4 {
     width: 7.5vw;
     height: 7.5vw;
     margin: 0;
-    animation: flip;
-    animation-duration: 0.5s;
   }
 
   .enlaceAside {
@@ -278,14 +271,13 @@ h3, h4 {
     height: 20vw;
   }
 
-  div aside {
-    border-top: black 1px solid;
-    border-left: none;
-  }
-
   header nav a {
     font-size: 4.3vw;
     color: black;
+  }
+
+  aside {
+    border-top: white 1px solid;
   }
 
   .spaceEvenly {
@@ -301,8 +293,6 @@ h3, h4 {
     width: 12vw;
     height: 12vw;
     margin: 0;
-    animation: flip;
-    animation-duration: 0.5s;
   }
 
   .tituloPrincipal {
@@ -328,6 +318,16 @@ h3, h4 {
     width: 20vw;
     height: 8vw;
   }
+
+  .tituloChico {
+    font-size: 4vw;
+  }
+
+  .video {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+  }
 }
 @media (max-width: 576px) {
   .visibility {
@@ -339,7 +339,13 @@ h3, h4 {
   }
 
   .tituloSecundario {
-    font-size: 6vw;
+    font-size: 5vw;
+  }
+
+  .video {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
   }
 }
 
