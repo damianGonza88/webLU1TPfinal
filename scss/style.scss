@@ -92,7 +92,8 @@ h3, h4{
     }   
     .tituloChico{
         font-size: 4vw;        
-    }   
+    } 
+    
 }
   
 // Responsive sm
@@ -108,6 +109,7 @@ h3, h4{
     }
     aside{
         border-top: $colorSecundario 1px solid ;
+        border-left: none;
     }
     // clases           
     .spaceEvenly{
@@ -115,7 +117,12 @@ h3, h4{
     }
     .enlaceAside{
         width: 25vw;
-        height: 10vw;           
+        height: 10vw;   
+        margin: 0 5px;         
+    }
+    .enLinea{
+        display: inline-flex;
+        flex-direction: row;
     }
     .logo{
         @include imagen(12vw, 12vw, 0);       
@@ -131,7 +138,7 @@ h3, h4{
         font-size: 15px;
         color: $colorSecundario!important;
     }
-   
+      
      //   Rainbow Button
   .rainbow-button {
     width:calc(20vw + 6px);
@@ -167,7 +174,10 @@ h3, h4{
         width: 300px; 
         height: 200px;
         border-radius: 15px;
-        }  
+    }  
+    .enLinea{
+        display:block;        
+    }
 }
     
 

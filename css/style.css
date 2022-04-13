@@ -164,6 +164,15 @@ main img:hover {
   border-bottom: white 2px solid !important;
 }
 
+.bg-2 {
+  background: linear-gradient(to right, #dd5e89, #f7bb97);
+}
+
+.t-stroke-shadow {
+  color: #e8858e;
+  text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
+}
+
 .contenedor {
   display: inline-flex;
   flex-direction: row;
@@ -278,6 +287,7 @@ h3, h4 {
 
   aside {
     border-top: white 1px solid;
+    border-left: none;
   }
 
   .spaceEvenly {
@@ -287,6 +297,12 @@ h3, h4 {
   .enlaceAside {
     width: 25vw;
     height: 10vw;
+    margin: 0 5px;
+  }
+
+  .enLinea {
+    display: inline-flex;
+    flex-direction: row;
   }
 
   .logo {
@@ -346,6 +362,10 @@ h3, h4 {
     width: 300px;
     height: 200px;
     border-radius: 15px;
+  }
+
+  .enLinea {
+    display: block;
   }
 }
 
