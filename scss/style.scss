@@ -75,8 +75,8 @@ h3, h4{
     to {
       background-position:20vw;
     }
-  }
-
+}
+  
 // Responsive md lg
 @media (min-width: 769px) and (max-width: 1200px){   
     .itemMenu{
@@ -88,12 +88,11 @@ h3, h4{
     }
     .enlaceAside{
         width: 15vw;
-        height: 5vw;      
+        height: 5vw;
     }   
     .tituloChico{
         font-size: 4vw;        
-    } 
-    
+    }     
 }
   
 // Responsive sm
@@ -117,8 +116,7 @@ h3, h4{
     }
     .enlaceAside{
         width: 25vw;
-        height: 10vw;   
-        margin: 0 5px;         
+        height: 10vw;    
     }
     .enLinea{
         display: inline-flex;
