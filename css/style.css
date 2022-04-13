@@ -55,8 +55,7 @@ main img:hover {
 
 .foto {
   display: block;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 95%;
   border-radius: 15px;
 }
 
