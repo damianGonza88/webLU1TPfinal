@@ -366,6 +366,11 @@ h3, h4 {
   .enLinea {
     display: block;
   }
+
+  .enlaceAside {
+    width: 35vw;
+    height: 12vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
