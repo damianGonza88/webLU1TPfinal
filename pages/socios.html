@@ -20,6 +20,17 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.png">
  
+    <!-- Java Script -->
+    <script type="text/javascript">
+      function obtenerdatos()
+      {
+        var fnombre = document.getElementById('nombreObtenido').value;
+        var fapellido = document.getElementById('apellidoObtenido').value;
+        var fmail = document.getElementById('mailObtenido').value;
+        var flicencia = document.getElementById('licenciaObtenida').value;
+           
+      }
+    </script>
 </head>
 <body>
   <div class="container-fluid">
@@ -77,19 +88,19 @@
           <form class="row g-3">
             <div class="col-lg-6 col-md-6 col-sm-6 col-10 centrar">
               <label for="inputEmail4" class="fs-5 text-warning">Nombres</label>
-              <input type="text" class="form-control" id="inputName" required>
+              <input type="text" class="form-control" id="nombreObtenido" required>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-10 centrar">
               <label for="inputPassword4" class="fs-5 text-warning">Apellido</label>
-              <input type="text" class="form-control" id="inputLastName" required>
+              <input type="text" class="form-control" id="apellidoObtenido" required>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-6 col-10  centrar">
               <label for="inputAddress" class="fs-5 text-warning">E-mail</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="" required>
+              <input type="email" class="form-control" id="mailObetnido" placeholder="" required>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-6 col-10 centrar">
               <label for="inputCity" class="fs-5 text-warning">Licencia (Opc.)</label>
-              <input type="text" class="form-control" id="inputLicence">
+              <input type="text" class="form-control" id="licenciaObtenida">
             </div>
             
             <div class="col-lg-4 col-md-4 col-sm-4 col-8 ">
@@ -119,16 +130,21 @@
       </div>
     </main>
      
-    <footer>
-      <div>
-        <ul class="contenedor">
-          <li> <a href="https://www.facebook.com/radioclubperico" target="_blank"><img class="imagenEnlace" src="../img/facebook.png" alt="Facebook"></a></li>
-          <li> <a href="https://www.instagram.com/radioclubperico/" target="_blank"><img class="imagenEnlace" src="../img/instagram.png" alt="Instagram"></a></li>
-          <li> <a href="mailto: radioclubperico@gmail.com" target="_blank"><img class="imagenEnlace" src="../img/gmail.png" alt="Gmail"></a></li>
-          <li> <a href="https://wa.me/+5493884776677" target="_blank"><img class="imagenEnlace" src="../img/whatsapp.png" alt="Whatsapp"></a></li>
-        </ul>
+    <footer class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+
       </div>
-  
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 centrado">
+          <ul class="contenedor centrar">
+            <li> <a href="https://www.facebook.com/radioclubperico" target="_blank"><img class="imagenEnlace" src="../img/facebook.png" alt="Facebook"></a></li>
+            <li> <a href="https://www.instagram.com/radioclubperico/" target="_blank"><img class="imagenEnlace" src="../img/instagram.png" alt="instagram"></a></li>
+            <li> <a href="mailto: radioclubperico@gmail.com" target="_blank"><img class="imagenEnlace" src="../img/gmail.png" alt="Gmail"></a></li>
+            <li> <a href="https://wa.me/+5493884776677" target="_blank"><img class="imagenEnlace" src="../img/whatsapp.png" alt="Whatsapp"></a></li>
+          </ul>
+      </div>   
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 centrado">
+        <p class="centrar" style="font-size: 12px; color: aliceblue;">Web Development: Damian Gonza - LU4TDG - dmn_8899@hotmail.com</p>
+      </div>   
     </footer>
 
   </div>
